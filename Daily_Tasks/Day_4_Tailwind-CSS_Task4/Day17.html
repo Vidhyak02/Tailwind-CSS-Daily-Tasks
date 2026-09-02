@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plantopia | Find Your Green Space</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f7f8f4] text-gray-800">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="flex items-center justify-between px-6 md:px-16 py-5 bg-white shadow-sm">
+
+        <div class="flex items-center gap-2">
+            <span class="text-3xl">🌿</span>
+
+            <h1 class="text-2xl font-bold text-green-800">
+                Plantopia
+            </h1>
+        </div>
+
+
+        <div class="hidden md:flex gap-8 font-medium">
+
+            <a href="#" class="hover:text-green-700">
+                Home
+            </a>
+
+            <a href="#plants" class="hover:text-green-700">
+                Plants
+            </a>
+
+            <a href="#about" class="hover:text-green-700">
+                About
+            </a>
+
+            <a href="#contact" class="hover:text-green-700">
+                Contact
+            </a>
+
+        </div>
+
+
+        <button class="bg-green-800 text-white px-5 py-2 rounded-full hover:bg-green-700 transition">
+
+            Shop Now
+
+        </button>
+
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="px-6 md:px-16 py-12 md:py-20">
+
+        <div class="grid md:grid-cols-2 items-center gap-12">
+
+            <!-- Left Content -->
+
+            <div>
+
+                <p class="text-green-700 font-semibold mb-4">
+
+                    🌱 BRING NATURE HOME
+
+                </p>
+
+
+                <h1 class="heading-font text-5xl md:text-7xl font-bold leading-tight">
+
+                    Grow Happiness <br>
+
+                    <span class="text-green-700">
+
+                        One Plant
+
+                    </span>
+
+                    At A Time.
+
+                </h1>
+
+
+                <p class="text-gray-600 mt-6 leading-7 max-w-lg">
+
+                    Discover beautiful indoor plants that make your
+                    home fresher, greener and happier.
+
+                    Find the perfect plant for every corner of your home.
+
+                </p>
+
+
+                <div class="flex gap-4 mt-8">
+
+                    <button class="bg-green-800 text-white px-7 py-3 rounded-full hover:bg-green-700 transition">
+
+                        Explore Plants
+
+                    </button>
+
+
+                    <button class="border border-green-800 text-green-800 px-7 py-3 rounded-full hover:bg-green-100 transition">
+
+                        Learn More
+
+                    </button>
+
+                </div>
+
+
+                <!-- Small Stats -->
+
+                <div class="flex gap-10 mt-10">
+
+                    <div>
+
+                        <h2 class="text-2xl font-bold">
+
+                            500+
+
+                        </h2>
+
+                        <p class="text-sm text-gray-500">
+
+                            Happy Customers
+
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <h2 class="text-2xl font-bold">
+
+                            50+
+
+                        </h2>
+
+                        <p class="text-sm text-gray-500">
+
+                            Plant Varieties
+
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <h2 class="text-2xl font-bold">
+
+                            100%
+
+                        </h2>
+
+                        <p class="text-sm text-gray-500">
+
+                            Fresh Plants
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero Image -->
+
+            <div class="relative">
+
+                <div class="absolute -top-5 -left-5 w-full h-full bg-green-200 rounded-[40px]">
+
+                </div>
+
+
+                <img
+                    src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=900&q=80"
+                    alt="Plant"
+                    class="relative w-full h-[500px] object-cover rounded-[40px] shadow-xl"
+                >
+
+
+                <!-- Floating Card -->
+
+                <div class="absolute bottom-5 left-5 bg-white p-4 rounded-2xl shadow-lg flex items-center gap-3">
+
+                    <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center text-xl">
+
+                        🌱
+
+                    </div>
+
+
+                    <div>
+
+                        <h3 class="font-semibold">
+
+                            Fresh & Healthy
+
+                        </h3>
+
+                        <p class="text-xs text-gray-500">
+
+                            Delivered with care
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORY SECTION ================= -->
+
+    <section class="bg-white px-6 md:px-16 py-16">
+
+        <div class="text-center">
+
+            <p class="text-green-700 font-semibold">
+
+                SHOP BY CATEGORY
+
+            </p>
+
+            <h2 class="heading-font text-4xl font-bold mt-2">
+
+                Find Your Perfect Plant
+
+            </h2>
+
+        </div>
+
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+
+
+            <div class="bg-green-50 rounded-3xl p-6 text-center hover:-translate-y-2 transition duration-300">
+
+                <div class="text-5xl">
+
+                    🪴
+
+                </div>
+
+                <h3 class="font-semibold mt-4">
+
+                    Indoor Plants
+
+                </h3>
+
+            </div>
+
+
+            <div class="bg-orange-50 rounded-3xl p-6 text-center hover:-translate-y-2 transition duration-300">
+
+                <div class="text-5xl">
+
+                    🌵
+
+                </div>
+
+                <h3 class="font-semibold mt-4">
+
+                    Succulents
+
+                </h3>
+
+            </div>
+
+
+            <div class="bg-blue-50 rounded-3xl p-6 text-center hover:-translate-y-2 transition duration-300">
+
+                <div class="text-5xl">
+
+                    🌿
+
+                </div>
+
+                <h3 class="font-semibold mt-4">
+
+                    Air Purifying
+
+                </h3>
+
+            </div>
+
+
+            <div class="bg-yellow-50 rounded-3xl p-6 text-center hover:-translate-y-2 transition duration-300">
+
+                <div class="text-5xl">
+
+                    🌸
+
+                </div>
+
+                <h3 class="font-semibold mt-4">
+
+                    Flower Plants
+
+                </h3>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PLANTS SECTION ================= -->
+
+    <section id="plants" class="px-6 md:px-16 py-20">
+
+        <div class="flex justify-between items-end">
+
+            <div>
+
+                <p class="text-green-700 font-semibold">
+
+                    OUR COLLECTION
+
+                </p>
+
+                <h2 class="heading-font text-4xl font-bold mt-2">
+
+                    Popular Plants
+
+                </h2>
+
+            </div>
+
+
+            <button class="hidden md:block text-green-800 font-semibold">
+
+                View All →
+
+            </button>
+
+        </div>
+
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+
+
+            <!-- Card 1 -->
+
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition">
+
+                <img
+                    src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80"
+                    class="w-full h-64 object-cover"
+                    alt="Monstera"
+                >
+
+                <div class="p-6">
+
+                    <div class="flex justify-between">
+
+                        <h3 class="text-xl font-semibold">
+
+                            Monstera Plant
+
+                        </h3>
+
+                        <span class="text-yellow-500">
+
+                            ★ 4.8
+
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-500 text-sm mt-2">
+
+                        Easy care indoor plant
+
+                    </p>
+
+                    <div class="flex justify-between items-center mt-5">
+
+                        <span class="font-bold text-lg">
+
+                            ₹499
+
+                        </span>
+
+                        <button class="bg-green-800 text-white px-4 py-2 rounded-full">
+
+                            Add +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 2 -->
+
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition">
+
+                <img
+                    src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600&q=80"
+                    class="w-full h-64 object-cover"
+                    alt="Snake Plant"
+                >
+
+                <div class="p-6">
+
+                    <div class="flex justify-between">
+
+                        <h3 class="text-xl font-semibold">
+
+                            Snake Plant
+
+                        </h3>
+
+                        <span class="text-yellow-500">
+
+                            ★ 4.7
+
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-500 text-sm mt-2">
+
+                        Perfect for beginners
+
+                    </p>
+
+                    <div class="flex justify-between items-center mt-5">
+
+                        <span class="font-bold text-lg">
+
+                            ₹399
+
+                        </span>
+
+                        <button class="bg-green-800 text-white px-4 py-2 rounded-full">
+
+                            Add +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 3 -->
+
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition">
+
+                <img
+                    src="https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=600&q=80"
+                    class="w-full h-64 object-cover"
+                    alt="Indoor Plant"
+                >
+
+                <div class="p-6">
+
+                    <div class="flex justify-between">
+
+                        <h3 class="text-xl font-semibold">
+
+                            Peace Lily
+
+                        </h3>
+
+                        <span class="text-yellow-500">
+
+                            ★ 4.9
+
+                        </span>
+
+                    </div>
+
+                    <p class="text-gray-500 text-sm mt-2">
+
+                        Beautiful flowering plant
+
+                    </p>
+
+                    <div class="flex justify-between items-center mt-5">
+
+                        <span class="font-bold text-lg">
+
+                            ₹599
+
+                        </span>
+
+                        <button class="bg-green-800 text-white px-4 py-2 rounded-full">
+
+                            Add +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section id="about" class="bg-green-800 text-white px-6 md:px-16 py-16">
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+
+
+            <div>
+
+                <h2 class="heading-font text-4xl md:text-5xl font-bold">
+
+                    Plants Make Life Better 🌿
+
+                </h2>
+
+                <p class="text-green-100 mt-6 leading-7">
+
+                    At Plantopia, we believe every home deserves
+                    a little bit of nature.
+
+                    Our plants are carefully selected and delivered
+                    fresh to your doorstep.
+
+                </p>
+
+
+                <button class="mt-7 bg-white text-green-800 px-7 py-3 rounded-full font-semibold hover:bg-green-100 transition">
+
+                    Discover Our Story
+
+                </button>
+
+            </div>
+
+
+            <div class="grid grid-cols-2 gap-5">
+
+
+                <div class="bg-green-700 p-6 rounded-3xl">
+
+                    <div class="text-4xl">
+
+                        🚚
+
+                    </div>
+
+                    <h3 class="font-semibold mt-4">
+
+                        Fast Delivery
+
+                    </h3>
+
+                    <p class="text-sm text-green-100 mt-2">
+
+                        Safe and quick delivery.
+
+                    </p>
+
+                </div>
+
+
+                <div class="bg-green-700 p-6 rounded-3xl">
+
+                    <div class="text-4xl">
+
+                        💚
+
+                    </div>
+
+                    <h3 class="font-semibold mt-4">
+
+                        Plant Care
+
+                    </h3>
+
+                    <p class="text-sm text-green-100 mt-2">
+
+                        Easy care instructions.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section id="contact" class="px-6 md:px-16 py-20 text-center">
+
+        <div class="bg-green-100 rounded-[40px] px-6 py-16">
+
+            <p class="text-green-700 font-semibold">
+
+                STAY CONNECTED
+
+            </p>
+
+            <h2 class="heading-font text-4xl font-bold mt-3">
+
+                Join Our Green Community 🌱
+
+            </h2>
+
+            <p class="text-gray-600 mt-4">
+
+                Get plant care tips and special offers directly to your inbox.
+
+            </p>
+
+
+            <div class="flex flex-col sm:flex-row justify-center gap-3 mt-8">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="px-5 py-3 rounded-full outline-none w-full sm:w-80"
+                >
+
+                <button class="bg-green-800 text-white px-7 py-3 rounded-full hover:bg-green-700">
+
+                    Subscribe
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-gray-900 text-gray-400 px-6 md:px-16 py-10">
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-5">
+
+            <div>
+
+                <h2 class="text-2xl font-bold text-white">
+
+                    🌿 Plantopia
+
+                </h2>
+
+                <p class="text-sm mt-2">
+
+                    Bringing nature closer to you.
+
+                </p>
+
+            </div>
+
+
+            <p class="text-sm">
+
+                © 2026 Plantopia. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
