@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TasteFinder - Recipe Website</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-orange-50 text-gray-800">
+
+
+    <!-- Navbar -->
+
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center px-6 md:px-16">
+
+        <h1 class="text-2xl font-bold text-orange-500">
+            🍳 TasteFinder
+        </h1>
+
+        <div class="hidden md:flex gap-7 font-medium">
+
+            <a href="#home" class="hover:text-orange-500">
+                Home
+            </a>
+
+            <a href="#recipes" class="hover:text-orange-500">
+                Recipes
+            </a>
+
+            <a href="#categories" class="hover:text-orange-500">
+                Categories
+            </a>
+
+            <a href="#tips" class="hover:text-orange-500">
+                Tips
+            </a>
+
+        </div>
+
+        <button class="bg-orange-500 text-white px-5 py-2 rounded">
+            Login
+        </button>
+
+    </nav>
+
+
+
+    <!-- Hero Section -->
+
+    <section id="home"
+        class="h-[550px] bg-cover bg-center"
+        style="background-image: url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1600&q=80');">
+
+        <div class="bg-black bg-opacity-60 h-full flex flex-col justify-center items-center text-center text-white px-5">
+
+            <p class="text-orange-300 text-lg">
+                COOK • EXPLORE • ENJOY
+            </p>
+
+            <h1 class="text-4xl md:text-6xl font-bold mt-3">
+                Find Delicious Recipes
+            </h1>
+
+            <p class="mt-5 text-lg text-gray-200">
+                Discover new recipes and cook something amazing today.
+            </p>
+
+
+            <!-- Search -->
+
+            <div class="bg-white mt-8 p-2 rounded-lg flex w-full max-w-xl">
+
+                <input
+                    type="text"
+                    placeholder="Search your favorite recipe..."
+                    class="w-full px-4 py-3 text-black outline-none">
+
+                <button class="bg-orange-500 px-6 py-3 rounded text-white">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Search By Ingredients -->
+
+    <section class="py-16 px-6 bg-white">
+
+        <h2 class="text-3xl font-bold text-center">
+            Search By Ingredients
+        </h2>
+
+        <p class="text-center text-gray-500 mt-2">
+            Choose an ingredient and find delicious recipes
+        </p>
+
+
+        <div class="flex flex-wrap justify-center gap-4 mt-10">
+
+            <button class="bg-orange-100 px-6 py-3 rounded-full hover:bg-orange-500 hover:text-white">
+                🥚 Egg
+            </button>
+
+            <button class="bg-orange-100 px-6 py-3 rounded-full hover:bg-orange-500 hover:text-white">
+                🍅 Tomato
+            </button>
+
+            <button class="bg-orange-100 px-6 py-3 rounded-full hover:bg-orange-500 hover:text-white">
+                🍗 Chicken
+            </button>
+
+            <button class="bg-orange-100 px-6 py-3 rounded-full hover:bg-orange-500 hover:text-white">
+                🥔 Potato
+            </button>
+
+            <button class="bg-orange-100 px-6 py-3 rounded-full hover:bg-orange-500 hover:text-white">
+                🧀 Cheese
+            </button>
+
+            <button class="bg-orange-100 px-6 py-3 rounded-full hover:bg-orange-500 hover:text-white">
+                🥕 Carrot
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Popular Recipes -->
+
+    <section id="recipes" class="py-16 px-6">
+
+        <h2 class="text-3xl font-bold text-center">
+            Popular Recipes
+        </h2>
+
+        <p class="text-center text-gray-500 mt-2">
+            Explore our most loved recipes
+        </p>
+
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 max-w-6xl mx-auto mt-10">
+
+
+            <!-- Recipe 1 -->
+
+            <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-xl">
+
+                <img
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+                    class="w-full h-52 object-cover">
+
+                <div class="p-5">
+
+                    <div class="flex justify-between">
+
+                        <span class="text-orange-500">
+                            Italian
+                        </span>
+
+                        <span>
+                            ⭐ 4.8
+                        </span>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold mt-3">
+                        Cheese Pizza
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        Delicious homemade pizza with cheese and vegetables.
+                    </p>
+
+                    <div class="flex justify-between mt-4 text-gray-600">
+
+                        <span>⏱ 30 mins</span>
+
+                        <span>Easy</span>
+
+                    </div>
+
+                    <button class="bg-orange-500 text-white px-4 py-2 mt-5 rounded">
+                        View Recipe
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Recipe 2 -->
+
+            <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-xl">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80"
+                    class="w-full h-52 object-cover">
+
+                <div class="p-5">
+
+                    <div class="flex justify-between">
+
+                        <span class="text-orange-500">
+                            Italian
+                        </span>
+
+                        <span>
+                            ⭐ 4.9
+                        </span>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold mt-3">
+                        Creamy Pasta
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        Creamy pasta made with vegetables and cheese.
+                    </p>
+
+                    <div class="flex justify-between mt-4 text-gray-600">
+
+                        <span>⏱ 25 mins</span>
+
+                        <span>Easy</span>
+
+                    </div>
+
+                    <button class="bg-orange-500 text-white px-4 py-2 mt-5 rounded">
+                        View Recipe
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Recipe 3 -->
+
+            <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-xl">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+                    class="w-full h-52 object-cover">
+
+                <div class="p-5">
+
+                    <div class="flex justify-between">
+
+                        <span class="text-orange-500">
+                            Healthy
+                        </span>
+
+                        <span>
+                            ⭐ 4.7
+                        </span>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold mt-3">
+                        Fresh Veg Salad
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        Healthy vegetables with a tasty fresh dressing.
+                    </p>
+
+                    <div class="flex justify-between mt-4 text-gray-600">
+
+                        <span>⏱ 15 mins</span>
+
+                        <span>Easy</span>
+
+                    </div>
+
+                    <button class="bg-orange-500 text-white px-4 py-2 mt-5 rounded">
+                        View Recipe
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Categories -->
+
+    <section id="categories" class="bg-white py-16 px-6">
+
+        <h2 class="text-3xl font-bold text-center">
+            Browse By Category
+        </h2>
+
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mt-10">
+
+
+            <div class="bg-orange-100 text-center p-7 rounded-lg">
+
+                <p class="text-5xl">🥞</p>
+
+                <h3 class="font-bold text-lg mt-4">
+                    Breakfast
+                </h3>
+
+                <p class="text-sm text-gray-500 mt-2">
+                    Start your day
+                </p>
+
+            </div>
+
+
+            <div class="bg-orange-100 text-center p-7 rounded-lg">
+
+                <p class="text-5xl">🍛</p>
+
+                <h3 class="font-bold text-lg mt-4">
+                    Lunch
+                </h3>
+
+                <p class="text-sm text-gray-500 mt-2">
+                    Tasty meals
+                </p>
+
+            </div>
+
+
+            <div class="bg-orange-100 text-center p-7 rounded-lg">
+
+                <p class="text-5xl">🍝</p>
+
+                <h3 class="font-bold text-lg mt-4">
+                    Dinner
+                </h3>
+
+                <p class="text-sm text-gray-500 mt-2">
+                    Evening meals
+                </p>
+
+            </div>
+
+
+            <div class="bg-orange-100 text-center p-7 rounded-lg">
+
+                <p class="text-5xl">🍰</p>
+
+                <h3 class="font-bold text-lg mt-4">
+                    Desserts
+                </h3>
+
+                <p class="text-sm text-gray-500 mt-2">
+                    Sweet treats
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Why Choose Us -->
+
+    <section class="py-16 px-6">
+
+        <h2 class="text-3xl font-bold text-center">
+            Why Choose TasteFinder?
+        </h2>
+
+
+        <div class="grid md:grid-cols-3 gap-7 max-w-5xl mx-auto mt-10">
+
+
+            <div class="bg-white text-center p-7 shadow rounded-lg">
+
+                <p class="text-5xl">🍲</p>
+
+                <h3 class="text-xl font-bold mt-4">
+                    Easy Recipes
+                </h3>
+
+                <p class="text-gray-500 mt-3">
+                    Simple and easy recipes for everyone.
+                </p>
+
+            </div>
+
+
+            <div class="bg-white text-center p-7 shadow rounded-lg">
+
+                <p class="text-5xl">⏱️</p>
+
+                <h3 class="text-xl font-bold mt-4">
+                    Save Time
+                </h3>
+
+                <p class="text-gray-500 mt-3">
+                    Find quick recipes and save your cooking time.
+                </p>
+
+            </div>
+
+
+            <div class="bg-white text-center p-7 shadow rounded-lg">
+
+                <p class="text-5xl">❤️</p>
+
+                <h3 class="text-xl font-bold mt-4">
+                    Delicious Food
+                </h3>
+
+                <p class="text-gray-500 mt-3">
+                    Discover tasty dishes for every occasion.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Recipe Of The Day -->
+
+    <section class="py-16 px-6 bg-white">
+
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 bg-orange-500 overflow-hidden rounded-lg">
+
+
+            <div class="p-10 text-white flex flex-col justify-center">
+
+                <p class="font-semibold">
+                    SPECIAL RECIPE
+                </p>
+
+                <h2 class="text-3xl font-bold mt-3">
+                    Chicken Curry
+                </h2>
+
+                <p class="mt-4">
+                    A tasty and flavorful chicken curry made with fresh spices.
+                </p>
+
+                <p class="mt-4">
+                    ⏱ 40 Minutes &nbsp; ⭐ 4.9 Rating
+                </p>
+
+                <button class="bg-white text-orange-500 px-5 py-3 rounded mt-6 w-fit">
+                    View Full Recipe
+                </button>
+
+            </div>
+
+
+            <img
+                src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=80"
+                class="w-full h-80 md:h-full object-cover">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Cooking Tips -->
+
+    <section id="tips" class="py-16 px-6">
+
+        <h2 class="text-3xl font-bold text-center">
+            Cooking Tips
+        </h2>
+
+        <p class="text-center text-gray-500 mt-2">
+            Simple tips to improve your cooking
+        </p>
+
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10">
+
+
+            <div class="bg-white p-6 shadow rounded">
+
+                <h3 class="font-bold text-xl">
+                    🔪 Keep Your Knife Sharp
+                </h3>
+
+                <p class="text-gray-500 mt-3">
+                    A sharp knife makes cutting easier and safer.
+                </p>
+
+            </div>
+
+
+            <div class="bg-white p-6 shadow rounded">
+
+                <h3 class="font-bold text-xl">
+                    🧂 Add Salt Slowly
+                </h3>
+
+                <p class="text-gray-500 mt-3">
+                    Always taste your food before adding more salt.
+                </p>
+
+            </div>
+
+
+            <div class="bg-white p-6 shadow rounded">
+
+                <h3 class="font-bold text-xl">
+                    🍳 Prepare Ingredients First
+                </h3>
+
+                <p class="text-gray-500 mt-3">
+                    Keep all ingredients ready before you start cooking.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Newsletter -->
+
+    <section class="bg-gray-800 text-white text-center py-16 px-5">
+
+        <h2 class="text-3xl font-bold">
+            Get New Recipes Every Week 🍲
+        </h2>
+
+        <p class="text-gray-300 mt-3">
+            Subscribe and receive delicious recipes directly to your inbox.
+        </p>
+
+
+        <div class="mt-7 flex flex-col md:flex-row gap-3 justify-center max-w-lg mx-auto">
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                class="px-5 py-3 rounded text-black outline-none w-full">
+
+            <button class="bg-orange-500 px-6 py-3 rounded">
+                Subscribe
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-black text-white py-10 px-6">
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+
+
+            <div>
+
+                <h2 class="text-2xl font-bold text-orange-500">
+                    🍳 TasteFinder
+                </h2>
+
+                <p class="text-gray-400 mt-3">
+                    Discover delicious recipes and enjoy cooking.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold text-lg">
+                    Quick Links
+                </h3>
+
+                <div class="flex flex-col gap-2 text-gray-400 mt-3">
+
+                    <a href="#home">Home</a>
+
+                    <a href="#recipes">Recipes</a>
+
+                    <a href="#categories">Categories</a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold text-lg">
+                    Follow Us
+                </h3>
+
+                <p class="text-gray-400 mt-3">
+                    Instagram &nbsp; Facebook &nbsp; YouTube
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <hr class="border-gray-700 mt-8">
+
+        <p class="text-center text-gray-500 mt-5">
+
+            © 2026 TasteFinder. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
